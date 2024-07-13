@@ -1,0 +1,19 @@
+.lalibela {
+    background-image: url("../../../public/Lalibela-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: blur(2px);
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.svg-icon {
+    filter: invert(75%) sepia(72%) saturate(574%) hue-rotate(11deg) brightness(106%) contrast(103%);
+}
