@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Review() {
+export default function ReviewCard() {
     return (
         <div className="max-w-80 min-w-72 rounded-lg border-2 border-black shadow-xl p-6">
             <div className="flex items-center">

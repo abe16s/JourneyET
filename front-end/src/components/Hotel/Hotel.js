@@ -2,8 +2,9 @@
 
 import React from "react"
 import SectionTitle from "./SectionTitle"
-import Room from "./Room"
-import Review from "./Review"
+import RoomCard from "./RoomCard"
+import ReviewCard from "./ReviewCard"
+import "./hotel.css"
 
 import { useState } from 'react';
 
@@ -76,7 +77,7 @@ export default function Hotel() {
                     </div>
                     <div className="flex flex-col items-center gap-3 w-1/3">
                         <iframe className="w-full aspect-square" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4334284736947!2d38.815090873528376!3d9.024166689067641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8510ffb34911%3A0xd1f0485a5345d81b!2sHaile%20Grand%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1720959849387!5m2!1sen!2set" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <a href="https://maps.app.goo.gl/LzM51r1madoKaoqSA" target="_blank" className="bg-yellow-200 font-bold p-1 rounded-lg w-max">Open with Google Maps</a>
+                        <a href="https://maps.app.goo.gl/LzM51r1madoKaoqSA" target="_blank" className="btn-yellow font-bold py-1 px-3 rounded-xl w-max">Open with Google Maps</a>
                     </div>
                 </section>
             </section>
@@ -224,19 +225,19 @@ export default function Hotel() {
                 </div>
             </section>
             <section className="my-12 grid grid-cols-3 gap-4 place-items-center">
-                <Room/>
-                <Room/>
-                <Room/>
-                <Room/>
-                <Room/>
-                <Room/> 
+                <RoomCard/>
+                <RoomCard/>
+                <RoomCard/>
+                <RoomCard/>
+                <RoomCard/>
+                <RoomCard/> 
             </section>
             <section className="my-12">
                 <SectionTitle title={"Guest reviews"}/>
                 <div className="my-12 flex gap-5 overflow-x-auto">
-                    <Review/>
-                    <Review/>
-                    <Review/>
+                    <ReviewCard/>
+                    <ReviewCard/>
+                    <ReviewCard/>
                 </div>
                 <div className="flex justify-between">
                     <div>
@@ -249,7 +250,7 @@ export default function Hotel() {
                             <i className={`fa-star ${reviewStar >= 5 ? 'fa-solid': "fa-regular"}`} onClick={() => {setReviewStar(5)}}></i>
                         </div>
                         <textarea rows={5} cols={60} placeholder="Enter your comments here..." className="border-2 border-black rounded-md p-2 block"/>
-                        <button className="bg-yellow-200 font-bold py-1 px-5 mt-3 rounded-xl w-max">Post</button>
+                        <button className="btn-yellow font-bold py-1 px-5 mt-3 rounded-2xl w-max">Post</button>
                     </div>
                     <div>
                         <h4 className="font-bold text-2xl">Contacts</h4>
