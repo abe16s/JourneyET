@@ -3,6 +3,7 @@
 import React from "react"
 import { useRouter } from "next/navigation";
 import "./home.css"
+import Gallery from "../SiteDetail/Gallery/Gallery";
 
 export default function Home() {
     const router = useRouter();
@@ -19,6 +20,8 @@ export default function Home() {
                 <h3 className="font-semibold my-4">Home Page</h3>
                 <button className="bg-yellow-300 font-bold p-1 rounded-lg" onClick={() => router.push("/sitedetail")}>Got to details</button>
             </div>
+            <Gallery />
+
             
         </>
         
