@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "@fontsource/poppins";
 
 /* :root {
   --foreground-rgb: 0, 0, 0;

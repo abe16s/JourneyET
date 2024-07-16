@@ -1,0 +1,97 @@
+.filter-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align to the right */
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.search-bar {
+  width: 50%;
+  max-width: 600px;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ffffff' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 18px center; /* Adjust the position of the icon */
+  padding-left: 45px;
+}
+
+.filter {
+  text-align: right; /* Align text to the right */
+  margin-top: 1rem;
+  width:50%
+}
+
+.filter-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 2rem; /* Ensure there's enough space for the icon */
+  
+}
+
+.filter-title svg {
+  margin-right: 0.5rem;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Align to the right */
+  gap:2rem;
+ 
+}
+
+.filter-option {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-option:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.filter-option.active {
+  background-color: rgba(255, 223, 85, 1);
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .filter-search-container {
+    align-items: center;
+    
+  }
+
+  .filter{
+    width:100%;
+  }
+
+  .search-bar-container {
+    justify-content: center;
+  }
+
+  .filter-container {
+    align-items: center;
+  }
+
+  .filter-options {
+    justify-content: center;
+  }
+}
