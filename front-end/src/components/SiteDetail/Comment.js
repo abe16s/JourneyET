@@ -4,7 +4,7 @@ import { useState } from 'react';
 export default function Review(){
   const [reviewStar, setReviewStar] = useState(0);
   return(
-  <div>
+  <div className='ml-10'>
     <h4 className="font-bold text-2xl">Leave a review</h4>
     <div className="flex gap-2 my-5">
         <i className={`fa-star ${reviewStar >= 1 ? 'fa-solid': "fa-regular"}`} onClick={() => {setReviewStar(1)}}></i>
