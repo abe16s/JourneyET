@@ -1,16 +1,17 @@
 .header {
-    background-image: url('/Lalibela-bg.png');
+    background-image: url('/Lalibela-bg-2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   }
   
   .header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
   
   .header nav a {
@@ -40,7 +41,7 @@
   
   .header .logo-text {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   
   @media (max-width: 768px) {
@@ -52,7 +53,7 @@
     }
     .header .container {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
     .header-title {
       font-size: 2rem; 
@@ -75,7 +76,7 @@
     }
     .header .container {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
     .header-title {
       font-size: 2rem; 

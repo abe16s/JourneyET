@@ -13,7 +13,7 @@ export default function BookRoom() {
                 <section className="rounded-lg border-2 border-black  md:w-1/3">
                     <img src="../Haile-3.jpg" className="w-full rounded-t-lg"/>
                     <div className="flex flex-col lg:flex-row items-center px-4 py-2">
-                        <h2 className="text-2xl font-bold">Haile Grand Addis Ababa</h2>
+                        <h2 className="text-2xl font-bold">Wonderland Hotel, Harar</h2>
                         <div className="flex gap-1 my-2">
                             <i className="fa-solid fa-star"></i>
                             <i className="fa-solid fa-star"></i>
