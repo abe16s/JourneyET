@@ -99,8 +99,9 @@ const HomePage = () => {
                   <div className="text-lg mr-2 greater-than">&gt;</div>
                   <div className="font-bold">{item}</div>
                 </div>
-                <h3 className="font-semibold my-4">Home Page</h3>
-                <button className="bg-yellow-300 font-bold p-1 rounded-lg" onClick={() => router.push("/sitedetail")}>Got to details</button>
+                // <h3 className="font-semibold my-4">Home Page</h3>
+                // <button className="bg-yellow-300 font-bold p-1 rounded-lg" onClick={() => router.push("/sitedetail")}>Got to details</button>
+              ))}
             </div>
           </div>
         </section>
