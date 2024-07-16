@@ -4,10 +4,10 @@ import "./hotel.css"
 
 export default function BookRoom() {
     return (
-        <main className="px-24 py-8 flex gap-6 items-start">
-            <section className="rounded-lg border-2 border-black w-1/4">
+        <main className="lg:px-20 px-6 py-8 flex flex-col md:flex-row gap-6 items-start">
+            <section className="rounded-lg border-2 border-black  md:w-1/3">
                 <img src="../Haile-3.jpg" className="w-full rounded-t-lg"/>
-                <div className="flex items-center px-4 py-2">
+                <div className="flex flex-col lg:flex-row items-center px-4 py-2">
                     <h2 className="text-2xl font-bold">Haile Grand Addis Ababa</h2>
                     <div className="flex gap-1 my-2">
                         <i className="fa-solid fa-star"></i>
@@ -22,16 +22,16 @@ export default function BookRoom() {
                 <p className="text-lg pl-4"><span className="font-semibold">Check-out</span> - Jul 19</p>
                 <div className="mt-12 mb-4 font-semibold flex justify-between px-4 text-xl"><span>Total</span><span>US$177.10</span></div>
             </section>
-            <form className="rounded-lg border-2 border-black p-10 flex-1">
-                <h3 className="text-2xl font-bold">Who's checking in</h3>
-                <div className="grid grid-cols-2 gap-10 p-10">
+            <form className="rounded-lg border-2 border-black p-3 md:p-10 w-full">
+                <h3 className="text-2xl font-bold mb-3">Who's checking in</h3>
+                <div className="grid md:grid-cols-2 gap-10 md:p-10">
                     <CustomInput label="First name" type="text"/>
                     <CustomInput label="Last name" type="text"/>
                     <CustomInput label="Email address" type="email"/>
                     <CustomInput label="Phone number" type="number"/>
                 </div>
-                <h3 className="text-2xl font-bold mt-4">Payment method</h3>
-                <div className="grid grid-cols-2 gap-10 p-10">
+                <h3 className="text-2xl font-bold my-4">Payment method</h3>
+                <div className="grid md:grid-cols-2 gap-10 md:p-10">
                     <CustomInput label="Cardholder’s name" type="text"/>
                     <CustomInput label="Card type" type="text"/>
                     <CustomInput label="Card number" type="number"/>

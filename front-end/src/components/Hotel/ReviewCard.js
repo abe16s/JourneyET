@@ -19,8 +19,7 @@ export default function ReviewCard() {
             </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel velit 
-                a est placerat dictum et et libero. Vestibulum ante ipsum primis in 
-                faucibus orci luctus et ultrices 
+                a est. 
             </p>
         </div>
     )
