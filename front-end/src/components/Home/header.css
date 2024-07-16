@@ -1,8 +1,8 @@
-/* Header background image and text */
 .header {
     background-image: url('/Lalibela-bg.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     color: white;
   }
@@ -46,29 +46,47 @@
   @media (max-width: 768px) {
     .header-title {
       text-align: center;
-      font-size: 2.5rem; /* Adjust font size for smaller screens */
     }
-  
     .header nav {
-      display: none; /* Hide the nav links on mobile */
+      display: none;
     }
-  
     .header .container {
       flex-direction: column;
       align-items: center;
     }
-  
+    .header-title {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
     .header .text-left {
       bottom: 10%;
       left: 2%;
     }
+    .header .filter-options {
+      justify-content: center;
+    }
+  }
   
+  @media (max-width: 1000px) {
+    .header-title {
+      text-align: center;
+    }
+    .header nav {
+      display: none;
+    }
+    .header .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .header-title {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    .header .text-left {
+      bottom: 10%;
+      left: 2%;
+    }
     .header .filter-options {
       justify-content: center;
     }
   
-    .header .hamburger {
-      display: block;
-    }
   }
   
