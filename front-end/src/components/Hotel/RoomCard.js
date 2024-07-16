@@ -1,8 +1,12 @@
-import react from "react"
+import { useRouter } from "next/navigation";
 
-export default function Room() {
+import "./hotel.css"
+
+export default function RoomCard() {
+    const router = useRouter();
+
     return (
-        <div className="max-w-72 rounded-lg border-2 border-black shadow-xl">
+        <div className="max-w-72 rounded-lg border-2 border-black shadow-xl cream">
             <img src="Haile-3.jpg" className="w-full rounded-t-lg"/>
             <h3 className="font-bold text-lg text-center mt-2">Premium Room, 1 King Bed</h3>
             <div className="pl-4 mt-5 flex flex-col gap-1">
@@ -14,7 +18,7 @@ export default function Room() {
             </div>
             <div className="flex justify-between items-center px-6 mt-8 mb-3">
                 <p className="font-bold">$175</p>
-                <button className="bg-yellow-200 font-bold py-1 px-4 rounded-lg w-max">Reserve</button>
+                <button className="btn-yellow font-bold py-1 px-4 rounded-2xl w-max" onClick={() => router.push("/hotel/bookroom")}>Reserve</button>
             </div>
         </div>
     )

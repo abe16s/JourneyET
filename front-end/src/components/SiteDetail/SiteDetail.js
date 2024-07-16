@@ -20,6 +20,7 @@ export default function SiteDetail() {
                 <button className="bg-yellow-300 font-bold p-1 rounded-lg" onClick={() => router.push("/")}>Got back to home</button>
             </div>
             
+            
         </>
         
     )

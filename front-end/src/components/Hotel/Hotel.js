@@ -2,8 +2,9 @@
 
 import React from "react"
 import SectionTitle from "./SectionTitle"
-import Room from "./Room"
-import Review from "./Review"
+import RoomCard from "./RoomCard"
+import ReviewCard from "./ReviewCard"
+import "./hotel.css"
 
 import { useState } from 'react';
 
@@ -45,8 +46,8 @@ export default function Hotel() {
                     <i className="fa-solid fa-location-dot"></i>
                     <p>Asmara Road Lamberet Square, Yeka, 5713 Addis Ababa, Ethiopia</p>
                 </div>
-                <section className="flex justify-between my-8">
-                    <div className="flex flex-col gap-5 w-3/5">
+                <section className="flex flex-col-reverse md:flex-row gap-4 justify-between my-8">
+                    <div className="flex flex-col gap-5 md:w-3/5">
                         <p>
                             Located in Addis Ababa, 3.6 miles from Matti Multiplex Theatre, Haile Grand 
                             Addis Ababa provides accommodations with an outdoor swimming pool, free 
@@ -74,15 +75,15 @@ export default function Hotel() {
                             4.3 miles from Haile Grand Addis Ababa.
                         </p>
                     </div>
-                    <div className="flex flex-col items-center gap-3 w-1/3">
+                    <div className="flex flex-col items-center gap-3 md:w-1/3 w-2/3">
                         <iframe className="w-full aspect-square" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4334284736947!2d38.815090873528376!3d9.024166689067641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8510ffb34911%3A0xd1f0485a5345d81b!2sHaile%20Grand%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1720959849387!5m2!1sen!2set" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <a href="https://maps.app.goo.gl/LzM51r1madoKaoqSA" target="_blank" className="bg-yellow-200 font-bold p-1 rounded-lg w-max">Open with Google Maps</a>
+                        <a href="https://maps.app.goo.gl/LzM51r1madoKaoqSA" target="_blank" className="btn-yellow font-bold py-1 px-3 rounded-xl w-max">Open with Google Maps</a>
                     </div>
                 </section>
             </section>
             <section className="my-12">
                 <SectionTitle title={"Popular Facilities"}/>
-                <div className="p-10 grid grid-cols-4 text-xl gap-4">
+                <div className="p-10 grid grid-cols-2 md:grid-cols-4 text-xl gap-4">
                     <div className="flex items-center gap-2"><i className="fa-solid fa-person-swimming text-3xl"></i><span>Pool</span></div>
                     <div className="flex items-center gap-2"><i className="fa-solid fa-bus text-3xl"></i><span>Free airport shuttle</span></div>
                     <div className="flex items-center gap-2"><i className="fa-solid fa-mug-saucer text-3xl"></i><span>Breakfast included</span></div>
@@ -99,7 +100,7 @@ export default function Hotel() {
                     <div className="flex items-center gap-2"><i className="fa-solid fa-bus text-3xl"></i><span>Free airport shuttle</span></div>
                     <div className="flex items-center gap-2"><i className="fa-solid fa-mug-saucer text-3xl"></i><span>Breakfast included</span></div>
                 </div>
-                <div className="mt-4 grid grid-cols-2 gap-6">
+                <div className="mt-4 grid md:grid-cols-2 gap-6">
                     <div>
                         <h5 className="font-bold text-base">Parking and transportation</h5>
                         <ul className="pl-10 pt-1 list-disc">
@@ -144,7 +145,7 @@ export default function Hotel() {
             </section>
             <section className="my-12">
                 <SectionTitle title={"Rooms"}/>
-                <div className="w-full my-8 flex items-end justify-around">
+                <div className="w-full my-8 flex items-end justify-around flex-wrap gap-4">
                     <div className="relative">
                         <input 
                             type="date" 
@@ -223,22 +224,22 @@ export default function Hotel() {
                     </div>
                 </div>
             </section>
-            <section className="my-12 grid grid-cols-3 gap-4 place-items-center">
-                <Room/>
-                <Room/>
-                <Room/>
-                <Room/>
-                <Room/>
-                <Room/> 
+            <section className="my-12 grid md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+                <RoomCard/>
+                <RoomCard/>
+                <RoomCard/>
+                <RoomCard/>
+                <RoomCard/>
+                <RoomCard/> 
             </section>
             <section className="my-12">
                 <SectionTitle title={"Guest reviews"}/>
                 <div className="my-12 flex gap-5 overflow-x-auto">
-                    <Review/>
-                    <Review/>
-                    <Review/>
+                    <ReviewCard/>
+                    <ReviewCard/>
+                    <ReviewCard/>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex flex-col gap-7 justify-between lg:flex-row">
                     <div>
                         <h4 className="font-bold text-2xl">Leave a review</h4>
                         <div className="flex gap-2 my-5">
@@ -248,12 +249,12 @@ export default function Hotel() {
                             <i className={`fa-star ${reviewStar >= 4 ? 'fa-solid': "fa-regular"}`} onClick={() => {setReviewStar(4)}}></i>
                             <i className={`fa-star ${reviewStar >= 5 ? 'fa-solid': "fa-regular"}`} onClick={() => {setReviewStar(5)}}></i>
                         </div>
-                        <textarea rows={5} cols={60} placeholder="Enter your comments here..." className="border-2 border-black rounded-md p-2 block"/>
-                        <button className="bg-yellow-200 font-bold py-1 px-5 mt-3 rounded-xl w-max">Post</button>
+                        <textarea rows={5} cols={60} placeholder="Enter your comments here..." className="border-2 border-black rounded-md p-2 block max-w-full"/>
+                        <button className="btn-yellow font-bold py-1 px-5 mt-3 rounded-2xl w-max">Post</button>
                     </div>
                     <div>
                         <h4 className="font-bold text-2xl">Contacts</h4>
-                        <ul className="pl-6 mt-3 flex flex-col gap-3 min-w-96">
+                        <ul className="pl-6 mt-3 flex flex-col gap-3 ">
                             <li><i className="fa-solid fa-globe mr-2 w-8 text-center "></i><a href="https://hailehotelsandresorts.com/" target="_blank" className="underline">Haile Hotels & Resorts Group</a></li>
                             <li><i className="fa-solid fa-phone mr-2 w-8 text-center "></i>+251  116 67 00 00</li>
                             <li><i className="fa-solid fa-envelope mr-2 w-8 text-center "></i>reservationaddis@haileresorts.com</li>
