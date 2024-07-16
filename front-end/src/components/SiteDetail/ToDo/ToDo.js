@@ -8,15 +8,17 @@ const hotels = [
   ];
 
 const months=[
-    {name:"Jan",color:"#FBBE01"},
-    {name:"Jan",color:"#FBBE01"},
-    {name:"Jan",color:"#FBBE01"},
-    {name:"Jan",color:"#FBBE01"},
-    {name:"Jan",color:"#FBBE01"},
-    {name:"Jan",color:"#FBBE01"},
-    {name:"Jan",color:"#FBBE01"},
-    {name:"Jan",color:"#FBBE01"},
-    {name:"Jan",color:"#FBBE01"},
+    {name:"Sep",color:"#FBBE01"},
+    {name:"Oct",color:"#FAEC01"},
+    {name:"Nov",color:"#DFFF01"},
+    {name:"Dec",color:"#DFFF01"},
+    {name:"Jan",color:"#13FF01"},
+    {name:"Feb",color:"#13FF01"},
+    {name:"Mar",color:"#13FF01"},
+    {name:"Apr",color:"#DFFF01"},
+    {name:"Jun",color:"#DFFF01"},
+    {name:"Jul",color:"#DFFF01"},
+    {name:"Aug",color:"#DFFF01"},
 ]
 const ToDo =() =>{
     return (
@@ -31,12 +33,44 @@ const ToDo =() =>{
         </div>
 
 
-        <div className="relative w-full  container h-[33rem]  m-0 " >
+        <div className="relative w-full  container" >
 
         {/* Hotels Dots*/}
         <img src="path_dot.svg" alt="overlay" className="absolute path_dot" />
 
-        <div className="relative grid grid-cols-2 grid-rows-2 gap-10 w-full h-full items-center justify-center">
+
+        <div className="hotel-section flex gap-1">
+            
+            <div className="column left w-4/12">
+                <img src="people.svg" alt="people"  className="w-full h-auto"/>
+            </div>
+
+            <div className="column middle w-2/12 relative h-full">
+            <dic className="h-2/5">
+            <img src="river.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute top-24 right-2"/>
+            </dic>
+            <div className="h-3/5">
+            <img src="river.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute bottom-0 right-20 "/>
+            </div>
+            </div>
+
+            <div className="column large w-4/12">
+                <h3 className="font-extrabold  text-6xl ">
+                <span className="">Harer The Living</span> <br />
+                <span className="text-[#F1DF24] text-left mt-4">Museum</span>
+                     </h3>
+            </div>
+
+            <div className="column right w-2/12 relative">
+
+            <img src="river.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute right-3 top-5"/>
+            <img src="river.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute bottom-3 right-3 bottm-0"/>
+            </div>
+
+        </div>
+
+
+        {/* <div className="relative grid grid-cols-2 grid-rows-2 gap-10 w-full h-full items-center justify-center">
         {hotels.map((hotel, index) => (
                             <div key={index} className="flex flex-col items-end" 
                             style={{
@@ -50,14 +84,19 @@ const ToDo =() =>{
                             </div>
 
         ))}
-        </div>
+        </div> */}
+
+
         
-        <div className="mt-28 flex gap-3  ml-32 items-center ">
+
+
+
+        <div className="mt-5 mb-3 flex gap-3  ml-32 items-center ">
             <h3 className="font-bold">Best time to visit:</h3>
             <div className="flex flex-wap gap-4">
 
 { months.map((month,index) => (
-    <div key={month.name} className="rounded-md px-4 py-2 text-white font-bold"
+    <div key={month.name} className="rounded-md px-4 py-2 text-black font-bold"
     style={{
         borderRadius:'10px',
         padding:'auto 20px',
