@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto px-6 text-center mt-6">
-        <p>&copy; 2024 JournyET. All rights reserved.</p>
+        <p>&copy; 2024 JourneyET. All rights reserved.</p>
       </div>
     </footer>
   );
