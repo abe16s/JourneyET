@@ -44,12 +44,12 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="container mx-auto px-6 py-16 text-center">
+      <div className="container mx-auto px-6 text-center">
         <div className="header-title">
           <h1 className=" font-bold text-white leading-tight">
             <span className="block w-full">To the Land</span>
             <span className="block w-full">of <span className="text-yellow-300">Origin</span></span>
-            <span className="block w-full text-yellow-300">ETHIOPIA</span>
+            <span className="block w-full text-yellow-300 mt-100">ETHIOPIA</span>
           </h1>
         </div>
         <FilterSearch />

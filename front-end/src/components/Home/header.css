@@ -35,12 +35,12 @@
   }
   
   .header .icon-color {
-    color: yellow; /* Change this to the color you want for the icon */
+    color: yellow; 
   }
   
   .header .logo-text {
     display: flex;
-    align-items: center; /* Center logo and text vertically */
+    align-items: center;
   }
   
   @media (max-width: 768px) {
@@ -55,7 +55,7 @@
       align-items: center;
     }
     .header-title {
-      font-size: 2rem; /* Adjust font size for smaller screens */
+      font-size: 2rem; 
     }
     .header .text-left {
       bottom: 10%;
@@ -78,7 +78,7 @@
       align-items: center;
     }
     .header-title {
-      font-size: 2rem; /* Adjust font size for smaller screens */
+      font-size: 2rem; 
     }
     .header .text-left {
       bottom: 10%;

@@ -17,7 +17,8 @@ const FilterSearch = () => {
           </svg>
           <span>Filter</span>
         </div>
-        <div className="filter-options">
+        {/* <div className="filter-options">*/}
+        <div className="grid grid-cols-3 gap-5">
           <button className="filter-option">Natural Sites</button>
           <button className="filter-option">Museums</button>
           <button className="filter-option">National Parks</button>

@@ -5,6 +5,7 @@ import SectionTitle from "./SectionTitle"
 import RoomCard from "./RoomCard"
 import ReviewCard from "./ReviewCard"
 import "./hotel.css"
+import Footer from '../Footer/Footer';
 
 import { useState } from 'react';
 import Header from "../Header/Header"
@@ -267,6 +268,7 @@ export default function Hotel() {
                 </div>
             </section>
         </main>
+        <Footer />
         </>
     )
 }
