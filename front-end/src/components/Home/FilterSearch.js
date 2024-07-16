@@ -8,7 +8,7 @@ const FilterSearch = () => {
       <input
         type="text"
         placeholder="Search for your destination"
-        className="search-bar"
+        className="search-bar placeholder:text-gray-200"
       />
         <div className="filter">
         <div className="filter-title">
@@ -17,16 +17,17 @@ const FilterSearch = () => {
           </svg>
           <span>Filter</span>
         </div>
-        <div className="filter-options">
+        {/* <div className="filter-options">*/}
+        <div className="grid grid-cols-3 gap-5">
           <button className="filter-option">Natural Sites</button>
           <button className="filter-option">Museums</button>
           <button className="filter-option">National Parks</button>
-          <button className="filter-option">Cultural Sites</button>
+          <button className="filter-option">Cultural Sites</button> 
+          <button className="filter-option">Religious Sites</button>
           <button className="filter-option">Historical Sites</button>
           <button className="filter-option">Religious Sites</button>
-          <button className="filter-option">Cultural Sites</button>
-          <button className="filter-option">Historical Sites</button>
-          <button className="filter-option">Religious Sites</button>
+          <button className="filter-option">Lakes</button>
+          <button className="filter-option">Mountains</button>
         </div>
       </div>
     </div>

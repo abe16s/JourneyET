@@ -1,4 +1,4 @@
-
+"use client"
 import { useRouter } from "next/navigation";
 
 const Header =() =>{
@@ -9,7 +9,7 @@ const Header =() =>{
 
             <div className="w-3/12 flex items-center justify-end">
             <img src="axum-logo_yellow.svg" className="h-12 w-16 mr-1 " />
-            <span className="text-3xl font-extrabold font-poppins ">JourneyET</span>
+            <span className="text-3xl font-extrabold font-poppins cursor-pointer" onClick={() => router.push('/')}>JourneyET</span>
             </div>
 
             <div className="w-6/12 flex items-center justify-center">
@@ -29,8 +29,8 @@ const Header =() =>{
 
             <div className="w-3/12 flex items-center justify-end mr-28 space-x-6">
             <button className="text-md font-bold text-black hover:text-gray-500" onClick={() => router.push('/')}>Home</button>
-            <button className="text-md font-bold text-black  hover:text-gray-500" onClick={() => router.push('/')}>Home</button>
-            <button className="text-md font-bold text-black  hover:text-gray-500" onClick={() => router.push('/')}>Home</button>
+            <button className="text-md font-bold text-black  hover:text-gray-500" onClick={() => router.push('/')}>Destinations</button>
+            <button className="text-md font-bold text-black  hover:text-gray-500" onClick={() => router.push('/')}>About</button>
             <button className="text-lg font-bold bg-[#D6C835] text-white rounded px-4 py-2  hover:text-gray-200" onClick={()=>{}}>Sign Up</button>
             </div>
 

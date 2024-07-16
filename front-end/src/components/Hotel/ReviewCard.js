@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function ReviewCard() {
+export default function ReviewCard({review}) {
     return (
         <div className="max-w-80 min-w-72 rounded-lg border-2 border-black shadow-xl p-6">
             <div className="flex items-center">
@@ -18,8 +18,7 @@ export default function ReviewCard() {
                 <i className="fa-solid fa-star"></i>
             </div>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel velit 
-                a est. 
+                {review} 
             </p>
         </div>
     )

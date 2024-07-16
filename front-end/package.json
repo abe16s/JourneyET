@@ -12,6 +12,9 @@
     "@fontsource/poppins": "^5.0.14",
     "react": "^18",
     "react-dom": "^18",
+    "react-multi-carousel": "^2.8.5",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
     "next": "14.2.5"
   },
   "devDependencies": {
