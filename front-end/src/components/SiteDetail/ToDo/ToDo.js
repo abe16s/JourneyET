@@ -23,7 +23,7 @@ const months=[
 const ToDo =() =>{
     return (
         <>
-        <div className="page">
+        <div className="ToDoPage">
 
         <div className="max-4xl mx-auto p-6 space-y-8 font-poppins header">
             <div className="relative">

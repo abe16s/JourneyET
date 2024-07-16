@@ -18,7 +18,7 @@ export default function Home() {
                     <h1 className="text-white text-5xl font-bold">JourneyET</h1>        
                 </div>
                 <h3 className="font-semibold my-4">Home Page</h3>
-                <button className="bg-yellow-300 font-bold p-1 rounded-lg" onClick={() => router.push("/sitedetail")}>Got to details</button>
+                <button className="bg-yellow-300 font-bold p-1 rounded-lg" onClick={() => router.push("/hotel")}>Got to details</button>
             </div>
             <Gallery />
 

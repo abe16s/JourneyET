@@ -28,7 +28,7 @@ const Gallery = () =>{
     
 
     return (
-        <div className='relative w-full  mx-auto overflow-hidden'>
+        <div className='relative w-11/12  mx-auto overflow-hidden'>
             <div className="flex transition-transform duration-500">
                 {images.map((image,index)=>
                     (

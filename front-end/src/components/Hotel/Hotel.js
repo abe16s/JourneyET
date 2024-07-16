@@ -7,6 +7,7 @@ import ReviewCard from "./ReviewCard"
 import "./hotel.css"
 
 import { useState } from 'react';
+import Header from "../Header/Header"
 
 export default function Hotel() {
     const [rooms, setRooms] = useState(1);
@@ -22,6 +23,8 @@ export default function Hotel() {
     const [reviewStar, setReviewStar] = useState(0);
 
     return (
+        <>
+        <Header />
         <main className="w-10/12 mx-auto">
             <section id="images" className="grid grid-cols-3 grid-rows-3 gap-3">
                 <img src="Haile-2.jpg" className="row-start-1" />
@@ -264,5 +267,6 @@ export default function Hotel() {
                 </div>
             </section>
         </main>
+        </>
     )
 }
