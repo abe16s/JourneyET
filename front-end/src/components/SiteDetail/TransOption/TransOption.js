@@ -2,7 +2,7 @@ import './TransOption.css'
 const TransOption =() =>{
     return (
         <>
-        <div className="page my-5 mx-12 bg-white">
+        <div className="page my-16 mx-12 bg-white">
             {/* header */}
                 <div className="max-4xl space-y-8 font-poppins">
             <div className="relative">
@@ -12,7 +12,7 @@ const TransOption =() =>{
         </div>
 {/* 
         body */}
-        <div className="TranContainer flex gap-36  mt-8">
+        <div className="TranContainer flex flex-col md:flex-row md:gap-36  mt-8">
 
 
         <div className="container-options basis-1/2 space-y-1 grid col-auto gap-1 relative"> 

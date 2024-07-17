@@ -1,8 +1,8 @@
 import "./ToDo.css"
 const hotels = [
-    { name: 'Hotel 1', image: "river.jpg" },
-    { name: 'Hotel 1', image: "river.jpg" },
-    { name: 'Hotel 1', image: "river.jpg" },
+    { name: 'Hotel 1', image: "harer-1.jpg" },
+    { name: 'Hotel 1', image: "harer-2.jpg" },
+    { name: 'Hotel 1', image: "harer-3.jpg" },
     { name: 'Hotel 1', image: "river.jpg" },
     {name:"people", image:"people.svg"}
   ];
@@ -47,15 +47,15 @@ const ToDo =() =>{
 
             <div className="column middle w-2/12 relative h-full">
             <dic className="h-2/5">
-            <img src="river.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute top-24 right-2"/>
+            <img src="harer-1.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute top-24 right-2"/>
             </dic>
             <div className="h-3/5">
-            <img src="river.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute bottom-0 right-20 "/>
+            <img src="harer-2.jpeg" alt="Hotel" className="h-32 w-40 rounded-lg absolute bottom-0 right-20 "/>
             </div>
             </div>
 
             <div className="column large w-4/12">
-                <h3 className="font-extrabold  text-6xl ">
+                <h3 className="md:font-extrabold font-bold md:text-6xl text-3xl">
                 <span className="">Harer The Living</span> <br />
                 <span className="text-[#F1DF24] text-left mt-4">Museum</span>
                      </h3>
@@ -63,8 +63,8 @@ const ToDo =() =>{
 
             <div className="column right w-2/12 relative">
 
-            <img src="river.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute right-3 top-5"/>
-            <img src="river.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute bottom-3 right-3 bottm-0"/>
+            <img src="harer-3.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute right-3 top-5"/>
+            <img src="harer-4.jpg" alt="Hotel" className="h-32 w-40 rounded-lg absolute bottom-3 right-3 bottm-0"/>
             </div>
 
         </div>
@@ -91,9 +91,9 @@ const ToDo =() =>{
 
 
 
-        <div className="mt-5 mb-3 flex gap-3  ml-32 items-center ">
+        <div className="mt-5 mb-3 flex flex-col lg:flex-row gap-3  ml-32 items-center ">
             <h3 className="font-bold">Best time to visit:</h3>
-            <div className="flex flex-wap gap-4">
+            <div className="flex flex-wrap gap-4">
 
 { months.map((month,index) => (
     <div key={month.name} className="rounded-md px-4 py-2 text-black font-bold"

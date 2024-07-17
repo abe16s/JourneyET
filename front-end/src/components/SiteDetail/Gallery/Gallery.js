@@ -1,12 +1,12 @@
 import {useState,useEffect} from 'react';
 
 const images=[
-    'lake.jpg',
-    'lake2.jpg',
-    'river.jpg',
-    'lake.jpg',
-    'lake2.jpg',
-    'river.jpg'
+    'Harar-11.jpg',
+    'harer-9.jpg',
+    'harer-7.jpg',
+    'harer-10.jpg',
+    'harer-4.jpg',
+    'harer-5.jpg',
 ];
 
 const Gallery = () =>{
@@ -33,7 +33,7 @@ const Gallery = () =>{
                 {images.map((image,index)=>
                     (
                     <img  src={image} alt={`Image ${index +1}`}
-                    className={` min-w-full h-96 object-cover rounded-lg ${index==currentIndex? 'block':'hidden'}`}
+                    className={` w-4/5 mx-auto min-w-full h-96 object-contain rounded-lg ${index==currentIndex? 'block':'hidden'}`}
                     key={index}
                     />
                 ))};
