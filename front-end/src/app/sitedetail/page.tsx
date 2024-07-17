@@ -16,13 +16,13 @@ import Footer from "../../components/Footer/Footer"
 export default function page() {
     return (
         <>
-        <Header />
+        <Header/>
         <Gallery />
         <SiteDescription />
         <ToDo />
         <TransOption />
         <div className="bg-primary-color ">
-            <Tabs padding={true} tabname={"Local Cultures and Gift Shops"} section={[<HotelCard index={0}/>,<HotelCard index={1}/>,<HotelCard index={2}/>,<HotelCard index={3}/>]}/>
+            <Tabs padding={true} tabname={"Stay Resorts"} section={[<HotelCard index={0}/>,<HotelCard index={1}/>,<HotelCard index={2}/>,<HotelCard index={3}/>]}/>
         </div>
         <Tabs padding={false} tabname={"Local Cultures and Gift Shops"} section={[<LocalCultureCard index={0}/>,<LocalCultureCard index={1}/>,<LocalCultureCard index={2}/>,<LocalCultureCard index={3}/>]}/>
         <Tabs padding={false} tabname={"TourGuides"} section={[<TourGuideCard index={0}/>,<TourGuideCard index={1}/>,<TourGuideCard index={2}/>]}/>

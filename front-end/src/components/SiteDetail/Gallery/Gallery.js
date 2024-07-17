@@ -33,7 +33,7 @@ const Gallery = () =>{
                 {images.map((image,index)=>
                     (
                     <img  src={image} alt={`Image ${index +1}`}
-                    className={` w-4/5 mx-auto min-w-full h-96 object-contain rounded-lg ${index==currentIndex? 'block':'hidden'}`}
+                    className={` w-4/5 mx-auto min-w-full h-96 object-cover rounded-lg ${index==currentIndex? 'block':'hidden'}`}
                     key={index}
                     />
                 ))};
