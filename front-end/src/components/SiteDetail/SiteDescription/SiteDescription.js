@@ -61,7 +61,7 @@ const SiteDescription = () =>{
             <div className="md:w-1/2 w-full pl-4">
             <iframe
             className="w-full h-96 mb-4"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.6163383836797!2d38.76361131535779!3d9.005401793526828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85e61ab9fa4d%3A0x6638bb870b62a137!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1602938891970!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62995.67032089591!2d42.07694852802467!3d9.31293138689344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bda3c73a509d%3A0x47a0ad82e9e99ed6!2sHarar!5e0!3m2!1sen!2set!4v1721205812067!5m2!1sen!2set"
             allowFullScreen=""
             aria-hidden="false"
             tabIndex="0"

@@ -7,7 +7,7 @@ const Header =() =>{
         <>
         <div className="header-component flex flex-col md:flex-row w-full bg-[#FFEDDB] gap-2 md:gap-5 h-auto md:h-28 mb-16 ">
 
-            <div className="w-full md:w-3/12 flex items-center  md:justify-end">
+            <div className="w-full md:w-3/12 flex items-center md:justify-end">
             <img src="axum-logo_yellow.svg" className="h-12 w-16 mr-1 " />
             <span className="text-3xl font-extrabold font-poppins cursor-pointer" onClick={() => router.push('/')}>JourneyET</span>
             </div>

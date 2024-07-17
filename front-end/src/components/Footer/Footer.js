@@ -3,7 +3,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer bg-gray-800 text-gray-300 py-6">
-      <div className="container mx-auto px-6 flex justify-around items-center">
+      <div className="container-foot mx-auto px-6 flex justify-around items-center">
         <div className="footer-left">
           <h2 className="text-2xl font-bold"><span className='block'>READY FOR YOUR</span> <span className="text-yellow-300">VACATION?</span></h2>
         </div>
@@ -28,7 +28,7 @@ const Footer = () => {
             </a>
           </div>
       </div>
-      <div className="container mx-auto px-6 text-right mt-6">
+      <div className="container-foot mx-auto px-6 text-right mt-6">
         <p>&copy; 2024 JourneyET. All rights reserved.</p>
       </div>
     </footer>

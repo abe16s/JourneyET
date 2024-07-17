@@ -83,14 +83,14 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="grid-container container mx-auto px-6 py-12">
+      <main className="grid-container container-home mx-auto px-6 py-12">
         <div className='flex flex-col gap-10'>
             <Section title="Trending" items={trendingItems} />
             <Section title="User's Favorites" items={favoritesItems} />
             <Section title="Recommendations" items={recommendationsItems} />
         </div>
         <section className="faq-section py-16">
-          <div className="container mx-auto px-6">
+          <div className="container-home mx-auto px-6">
             <h2 className="text-3xl font-bold mb-6 text-center">FAQ's</h2>
             <div className="faq-list">
               {faqItems.map((item, index) => (

@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="header relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/Lalibela-bg-2.jpg')" }}>
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container-header mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-white flex items-center">
           <Link href="/" legacyBehavior>
             <a className="flex items-center">
@@ -44,7 +44,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="container flex mx-auto px-32 text-center lg:items-start">
+      <div className="container-header flex mx-auto px-32 text-center lg:items-start">
         <div className="header-title">
           <h1 className=" font-bold text-white leading-tight">
             <span className="block w-full">To the Land</span>
