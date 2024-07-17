@@ -27,7 +27,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex items-center space-x-4">
-          <nav className={`flex space-x-4 text-white ${menuOpen ? '' : 'hidden'} md:flex`}>
+          <nav className={`flex space-x-4 text-black font-bold ${menuOpen ? '' : 'hidden'} md:flex`}>
             <Link href="/" legacyBehavior><a>Home</a></Link>
             <Link href="/destinations" legacyBehavior><a>Destinations</a></Link>
             <Link href="/notification" legacyBehavior><a>Notification</a></Link>
@@ -40,7 +40,7 @@ const Header = () => {
             </svg>
           </button>
           <Link href="/signup" legacyBehavior>
-            <a className="bg-yellow-300 text-gray-800 py-2 px-4 rounded">SIGN UP</a>
+            <a className="bg-yellow-300 text-white py-2 px-4 rounded font-bold">SIGN UP</a>
           </Link>
         </div>
       </div>

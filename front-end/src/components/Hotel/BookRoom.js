@@ -1,7 +1,7 @@
 import React from "react";
 import CustomInput from "./CustomInput";
 import "./hotel.css";
-import Header from "../Header/Header";
+import Header from "../../components/Header/Header";
 import Footer from '../Footer/Footer';
 
 
