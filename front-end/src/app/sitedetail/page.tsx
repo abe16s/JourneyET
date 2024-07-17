@@ -22,11 +22,11 @@ export default function page() {
         <ToDo />
         <TransOption />
         <div className="bg-primary-color ">
-            <Tabs padding={true} tabname={"Local Cultures and Gift Shops"} section={[<HotelCard/>,<HotelCard/>,<HotelCard/>,<HotelCard/>]}/>
+            <Tabs padding={true} tabname={"Local Cultures and Gift Shops"} section={[<HotelCard index={0}/>,<HotelCard index={1}/>,<HotelCard index={2}/>,<HotelCard index={3}/>]}/>
         </div>
-        <Tabs padding={false} tabname={"Local Cultures and Gift Shops"} section={[<LocalCultureCard/>,<LocalCultureCard/>,<LocalCultureCard/>,<LocalCultureCard/>]}/>
-        <Tabs padding={false} tabname={"TourGuides"} section={[<TourGuideCard/>,<TourGuideCard/>,<TourGuideCard/>]}/>
-        <Tabs padding={false} tabname={"Experience"} section={[<ExperienceCard/>,<ExperienceCard/>,<ExperienceCard/>]}/>
+        <Tabs padding={false} tabname={"Local Cultures and Gift Shops"} section={[<LocalCultureCard index={0}/>,<LocalCultureCard index={1}/>,<LocalCultureCard index={2}/>,<LocalCultureCard index={3}/>]}/>
+        <Tabs padding={false} tabname={"TourGuides"} section={[<TourGuideCard index={0}/>,<TourGuideCard index={1}/>,<TourGuideCard index={2}/>]}/>
+        <Tabs padding={false} tabname={"Experience"} section={[<ExperienceCard index={0}/>,<ExperienceCard index={1}/>,<ExperienceCard index={2}/>]}/>
         <Comment/>
         <Footer/>
         </>
