@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/image.png')" }}>
+    <header className="header relative bg-cover bg-center h-screen" style={{ backgroundImage: "url('/Lalibela-bg-2.jpg')" }}>
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-white flex items-center">
           <Link href="/" legacyBehavior>
@@ -29,10 +29,10 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           <nav className={`flex space-x-4 text-white ${menuOpen ? '' : 'hidden'} md:flex`}>
             <Link href="/" legacyBehavior><a>Home</a></Link>
-            <Link href="/about" legacyBehavior><a>About</a></Link>
             <Link href="/destinations" legacyBehavior><a>Destinations</a></Link>
-            <Link href="/contact" legacyBehavior><a>Contact</a></Link>
             <Link href="/notification" legacyBehavior><a>Notification</a></Link>
+            <Link href="/about" legacyBehavior><a>About</a></Link>
+            <Link href="/contact" legacyBehavior><a>Contact</a></Link>
           </nav>
           <button className="md:hidden text-white" onClick={toggleMenu}>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
@@ -44,12 +44,12 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="container mx-auto px-6 text-center">
+      <div className="container flex mx-auto px-32 text-center lg:items-start">
         <div className="header-title">
           <h1 className=" font-bold text-white leading-tight">
             <span className="block w-full">To the Land</span>
             <span className="block w-full">of <span className="text-yellow-300">Origin</span></span>
-            <span className="block w-full text-yellow-300 mt-100">ETHIOPIA</span>
+            <span className="block w-full text-yellow-300 mt-">ETHIOPIA</span>
           </h1>
         </div>
         <FilterSearch />

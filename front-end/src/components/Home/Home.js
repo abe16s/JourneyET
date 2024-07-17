@@ -8,72 +8,72 @@ const HomePage = () => {
   const trendingItems = [
     {
       title: 'Lalibela',
-      description: 'Explore the rock-hewn churches of Lalibela.',
+      description: 'known for its distinctive rock-hewn churches dating from the 12th and 13th centuries, which are pilgrimage sites for Coptic Christians.',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/lalibela.jpg',
     },
     {
       title: 'Harar',
-      description: 'Explore the Living Museum.',
+      description: 'Surrounded by a centuries-old defensive wall that has several large gates, including Duke\'s Gate.',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/Harar.jpg',
     },
     {
       title: 'Axum',
-      description: 'Explore the rock-hewn churches of Lalibela.',
+      description: 'Known for its tall, carved obelisks, relics of the ancient Kingdom of Axum.',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/axum.jpg',
     },
   ];
 
   const favoritesItems = [
     {
       title: 'Lalibela',
-      description: 'Explore the rock-hewn churches of Lalibela.',
+      description: 'known for its distinctive rock-hewn churches dating from the 12th and 13th centuries, which are pilgrimage sites for Coptic Christians.',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/lalibela.jpg',
     },
     {
       title: 'Harar',
-      description: 'Explore the Living Museum.',
+      description: 'Surrounded by a centuries-old defensive wall that has several large gates, including Duke\'s Gate',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/Harar.jpg',
     },
     {
       title: 'Axum',
-      description: 'Explore the rock-hewn churches of Lalibela.',
+      description: 'Known for its tall, carved obelisks, relics of the ancient Kingdom of Axum.',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/axum.jpg',
     },
   ];
 
   const recommendationsItems = [
     {
       title: 'Lalibela Tour',
-      description: 'Explore the rock-hewn churches of Lalibela.',
+      description: 'known for its distinctive rock-hewn churches dating from the 12th and 13th centuries, which are pilgrimage sites for Coptic Christians.',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/lalibela.jpg',
     },
     {
       title: 'Harar',
-      description: 'Explore the Living Museum.',
+      description: 'Surrounded by a centuries-old defensive wall that has several large gates, including Duke\'s Gate',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/Harar.jpg',
     },
     {
       title: 'Axum',
-      description: 'Explore the rock-hewn churches of Lalibela.',
+      description: 'Known for its tall, carved obelisks, relics of the ancient Kingdom of Axum.',
       price: '$1,200 pp (USD)',
-      image: '/Haile-1.jpg',
+      image: '/axum.jpg',
     },
   ];
 
   const faqItems = [
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    'Is Ethiopia good for tourists?',
+    'Is it safe to travel to Ethiopia today?',
+    'Why do people visit Ethiopia?',
+    'What is beautiful about Ethiopia?',
+    'Are people friendly in Ethiopia?',
   ];
 
   return (

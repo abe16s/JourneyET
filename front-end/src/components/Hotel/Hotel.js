@@ -28,16 +28,16 @@ export default function Hotel() {
         <Header />
         <main className="w-10/12 mx-auto">
             <section id="images" className="grid grid-cols-3 grid-rows-3 gap-3">
-                <img src="Haile-2.jpg" className="row-start-1" />
-                <img src="Haile-2.jpg" className="row-start-2" />
-                <img src="Haile-2.jpg" className="row-start-3" />
-                <img src="Haile-2.jpg" className="row-start-3" />
-                <img src="Haile-2.jpg" className="row-start-3" />
-                <img src="Haile-1.jpg" className="row-start-1 row-end-3 col-span-2" />
+                <img src="Haile-2.jpg" className="row-start-1 w-full h-full object-cover" />
+                <img src="Haile-4.jpg" className="row-start-2 w-full h-full object-cover" />
+                <img src="Haile-5.jpg" className="row-start-3 w-full h-full object-cover" />
+                <img src="Haile-6.jpg" className="row-start-3 w-full h-full object-cover" />
+                <img src="Haile-7.jpg" className="row-start-3 w-full h-full object--cover" />
+                <img src="Haile-1.jpg" className="row-start-1 row-end-3 col-span-2 w-full h-full object-cover" />
             </section>
             <section>
                 <h1 className="font-bold text-4xl mt-6">
-                    Haile Grand Addis Ababa
+                    Wonderland Hotel
                 </h1>
                 <div className="flex gap-1 my-2">
                     <i className="fa-solid fa-star"></i>
@@ -48,13 +48,13 @@ export default function Hotel() {
                 </div>
                 <div className="flex items-center gap-2">
                     <i className="fa-solid fa-location-dot"></i>
-                    <p>Asmara Road Lamberet Square, Yeka, 5713 Addis Ababa, Ethiopia</p>
+                    <p>Charleville Ave, Shenkor, Harar, Ethiopia</p>
                 </div>
                 <section className="flex flex-col-reverse md:flex-row gap-4 justify-between my-8">
                     <div className="flex flex-col gap-5 md:w-3/5">
                         <p>
-                            Located in Addis Ababa, 3.6 miles from Matti Multiplex Theatre, Haile Grand 
-                            Addis Ababa provides accommodations with an outdoor swimming pool, free 
+                            Located in Harar, 3.6 miles from Matti Multiplex Theatre, Wonderland 
+                            provides accommodations with an outdoor swimming pool, free 
                             private parking, a fitness center and a garden. Each room at the 5-star 
                             hotel has city views, and guests can enjoy access to a terrace and to a 
                             sauna. The property has a 24-hour front desk, airport transportation, room 
@@ -65,23 +65,22 @@ export default function Hotel() {
                             flat-screen TV with satellite channels, a safety deposit box and a private 
                             bathroom with a shower, free toiletries and a hairdryer. Each room is 
                             equipped with an electric tea pot, while some rooms are equipped with a 
-                            kitchen with a fridge, a dishwasher and a minibar. At Haile Grand Addis 
-                            Ababa every room has bed linen and towels.
+                            kitchen with a fridge, a dishwasher and a minibar. At Wonderland 
+                            every room has bed linen and towels.
                         </p>
                         <p>
-                            A buffet breakfast is available daily at the accommodation. At Haile Grand 
-                            Addis Ababa you'll find a restaurant serving Mexican, Middle Eastern and 
+                            A buffet breakfast is available daily at the accommodation. At Wonderland 
+                            Harar you'll find a restaurant serving Mexican, Middle Eastern and 
                             Asian cuisine. Vegetarian, dairy-free and halal options can also be requested.
                         </p>
                         <p>
                             Asni Gallery is 3.8 miles from the hotel, while UNECA Conference Center is 
-                            4 miles away. The nearest airport is Addis Ababa Bole International Airport, 
-                            4.3 miles from Haile Grand Addis Ababa.
+                            4 miles away. 
                         </p>
                     </div>
                     <div className="flex flex-col items-center gap-3 md:w-1/3 w-2/3">
-                        <iframe className="w-full aspect-square" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.4334284736947!2d38.815090873528376!3d9.024166689067641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8510ffb34911%3A0xd1f0485a5345d81b!2sHaile%20Grand%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1720959849387!5m2!1sen!2set" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <a href="https://maps.app.goo.gl/LzM51r1madoKaoqSA" target="_blank" className="btn-yellow font-bold py-1 px-3 rounded-xl w-max">Open with Google Maps</a>
+                        <iframe className="w-full aspect-square" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6310.085969100988!2d42.12699738325943!3d9.31298450582707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1631bdbbece5bcd9%3A0x93f9ecbb330226cc!2sWonderland%20Hotel!5e0!3m2!1sen!2set!4v1721151346663!5m2!1sen!2set" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                        <a href="https://maps.app.goo.gl/Cm3brs3wT3tv1rXf8" target="_blank" className="btn-yellow font-bold py-1 px-3 rounded-xl w-max">Open with Google Maps</a>
                     </div>
                 </section>
             </section>
@@ -239,9 +238,9 @@ export default function Hotel() {
             <section className="my-12">
                 <SectionTitle title={"Guest reviews"}/>
                 <div className="my-12 flex gap-5 overflow-x-auto">
-                    <ReviewCard/>
-                    <ReviewCard/>
-                    <ReviewCard/>
+                    <ReviewCard review={"“The property was very clean. Staff was very helpful. The food was good. Whatever you asked for you were commentated with.”"}/>
+                    <ReviewCard review={"“Location an view were great. The staff was exceptional. The spa with barber, exercise, massage, etc. were great as was the pool.”"}/>
+                    <ReviewCard review={"Very good. We loved our stay after 3 weeks of voluntary work in Ethiopia"}/>
                 </div>
                 <div className="flex flex-col gap-7 justify-between lg:flex-row">
                     <div>

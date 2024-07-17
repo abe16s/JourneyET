@@ -13,7 +13,7 @@ const Card = ({ title, description, price, image }) => {
           <p className="text-gray-700 text-base">{description}</p>
           {/* <p className="text-gray-900 font-bold">{price}</p> */}
         </div>
-        <div className="text-center"><button className="gold-bg font-bold py-1 px-4 rounded-2xl w-max" onClick={() => router.push("/sitedetail")}>View</button></div>
+        <div className="text-center"><button className="gold-bg font-bold py-1 px-4 rounded-2xl w-max" onClick={() => router.push("/sitedetail")}>Explore</button></div>
       </div>
     );
   };
