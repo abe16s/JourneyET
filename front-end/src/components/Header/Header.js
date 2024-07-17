@@ -8,7 +8,7 @@ const Header =() =>{
         <div className="header-component flex flex-col md:flex-row w-full bg-[#FFEDDB] gap-2 md:gap-5 h-auto md:h-28 mb-16 ">
 
             <div className="w-full md:w-3/12 flex items-center md:justify-end">
-            <img src="axum-logo_yellow.svg" className="h-12 w-16 mr-1 " />
+            <img src="../axum-logo_yellow.svg" className="h-12 w-16 mr-1 " />
             <span className="text-3xl font-extrabold font-poppins cursor-pointer" onClick={() => router.push('/')}>JourneyET</span>
             </div>
 
@@ -16,13 +16,13 @@ const Header =() =>{
 
             <div className="relative w-full md:max-w-xs lg:max-w-2xl">
                 <span className="absolute left-4 top-1 transition-transform duration-200 transform group-focus-within:-translate-y-1 group-focus-within:scale-105">
-                    <img src="location-icon.svg" alt="Location icon" className="h-8 w-8" />
+                    <img src="../location-icon.svg" alt="Location icon" className="h-8 w-8" />
                 </span>
 
                 <input type="text" placeholder="Where to Visit?"
                 className="w-full pl-16 pr-10 py-2 rounded-3xl bg-white border border-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-100 focus:border-blue-50" />
                 <span className="absolute right-3 top-1 transition-transform duration-200 transform group-focus-within:-translate-y-1 group-focus-within:scale-105">
-                    <img src="search-icon.svg" alt="search icon" className="h-8 w-8" />
+                    <img src="../search-icon.svg" alt="search icon" className="h-8 w-8" />
                 
                 </span>
             </div>
