@@ -7,7 +7,7 @@
     color: white;
   }
   
-  .header .container {
+  .header .container-home {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +53,7 @@
       display: none; /* Hide the nav links on mobile */
     }
   
-    .header .container {
+    .header .container-home {
       flex-direction: column;
       align-items: center;
     }

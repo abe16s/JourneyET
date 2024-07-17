@@ -258,9 +258,9 @@ export default function Hotel() {
                     <div>
                         <h4 className="font-bold text-2xl">Contacts</h4>
                         <ul className="pl-6 mt-3 flex flex-col gap-3 ">
-                            <li><i className="fa-solid fa-globe mr-2 w-8 text-center "></i><a href="https://hailehotelsandresorts.com/" target="_blank" className="underline">Haile Hotels & Resorts Group</a></li>
+                            <li><i className="fa-solid fa-globe mr-2 w-8 text-center "></i><a href="https://hailehotelsandresorts.com/" target="_blank" className="underline">Wonderland Hotel</a></li>
                             <li><i className="fa-solid fa-phone mr-2 w-8 text-center "></i>+251  116 67 00 00</li>
-                            <li><i className="fa-solid fa-envelope mr-2 w-8 text-center "></i>reservationaddis@haileresorts.com</li>
+                            <li><i className="fa-solid fa-envelope mr-2 w-8 text-center "></i>reservation@wonderland.com</li>
                             <li><i className="fa-solid fa-building mr-2 w-8 text-center "></i>8169</li>
                         </ul>
                     </div>

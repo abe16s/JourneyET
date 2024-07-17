@@ -25,7 +25,7 @@ const ToDo =() =>{
         <>
         <div className="ToDoPage">
 
-        <div className="max-4xl mx-auto p-6 space-y-8 font-poppins header">
+        <div className="max-4xl mx-auto p-6 space-y-8 font-poppins header-todo">
             <div className="relative">
                 <hr className="border-t border-gray-300 w-full absolute top-1/2 transform -translate-y-1/2"/>
                 <h2 className="relative bg-white mt-8 mb-8 inline-block px-4 text-xl font-extrabold text-center left-1/2 transform -translate-x-1/2" style={{ left: '15%',  fontSize:'30px'}}>Things to do</h2>
